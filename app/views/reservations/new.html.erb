@@ -1,5 +1,115 @@
 <div class='topPage'>
-  <div class="container">
     <h1>会社・団体情報入力画面</h1>
-  </div>
+    <%= form_with model: @post, local: true do |f| %>
+     <div class="form-group">
+       <div class="row mb-3">
+         <label class="col-sm-2 col-form-label">会社名</label>
+           <div class="col-md-6">
+             <input type="text" class="form-control" name="name">
+           </div>
+        </div>
+        <div class="row mb-3">
+         <label class="col-sm-2 col-form-label">会社名ふりがな</label>
+           <div class="col-md-6">
+             <input type="text" class="form-control" name="name_kana">
+           </div>
+        </div>
+        <div class="mb-3 row">
+        	<label class="col-sm-2 col-form-label" for="InputSelect">都道府県</label>
+        		<div class="col-sm-6">
+        			<select class="form-control" id="InputSelect">
+        				<option>選択肢１</option>
+        				<option>選択肢２</option>
+        				<option>選択肢３</option>
+        			</select>
+        	 </div>
+        </div>
+        <div class="row mb-3">
+         <label class="col-sm-2 col-form-label">市区町村</label>
+           <div class="col-md-6">
+             <input type="text" class="form-control" name="company">
+           </div>
+        </div>
+        <div class="row mb-3">
+         <label class="col-sm-2 col-form-label">市区町村ふりがな</label>
+           <div class="col-md-6">
+             <input type="text" class="form-control" name="company">
+           </div>
+        </div>
+        <div class="row mb-3">
+         <label class="col-sm-2 col-form-label">番地</label>
+           <div class="col-md-6">
+             <input type="text" class="form-control" name="company">
+           </div>
+        </div>
+        <div class="row mb-3">
+         <label class="col-sm-2 col-form-label">建物名</label>
+           <div class="col-md-6">
+             <input type="text" class="form-control" name="company">
+           </div>
+        </div>
+        <div class="row mb-3">
+         <label class="col-sm-2 col-form-label">建物名ふりがな</label>
+           <div class="col-md-6">
+             <input type="text" class="form-control" name="company">
+           </div>
+        </div>
+        <div class="mb-3 row">
+        <div class="row mb-3">
+         <label class="col-sm-2 col-form-label">代表者肩書</label>
+           <div class="col-md-6">
+             <input type="text" class="form-control" name="company">
+           </div>
+        </div>
+        <div class="row mb-3">
+         <label class="col-sm-2 col-form-label">代表者氏名</label>
+           <div class="col-md-6">
+             <input type="text" class="form-control" name="company">
+           </div>
+        </div>
+        <div class="row mb-3">
+         <label class="col-sm-2 col-form-label">代表者氏名ふりがな</label>
+           <div class="col-md-6">
+             <input type="text" class="form-control" name="company">
+           </div>
+        </div>
+        <div class="row mb-3">
+         <label class="col-sm-2 col-form-label">会社電話番号</label>
+           <div class="col-md-6">
+             <input type="text" class="form-control" name="company">
+           </div>
+        </div>
+        <div class="row mb-3">
+         <label class="col-sm-2 col-form-label">担当者氏名</label>
+           <div class="col-md-6">
+             <input type="text" class="form-control" name="company">
+           </div>
+        </div>
+        	<div class="mb-3 row">
+        	<label class="col-sm-2 col-form-label">メールアドレス</label>
+        	 <div class="col-sm-6">
+             <input type="email" class="form-control" id="InputEmail" placeholder="メールアドレス">
+           </div>
+        </div>
+        	<div class="mb-3 row">
+            <label class="col-sm-2 col-form-label" for="InputPassword">パスワード</label>
+              <div class="col-sm-6">
+        			  <input type="password" class="form-control" id="InputPassword" placeholder="パスワード">
+                <span id="helpBlock" class="form-text">パスワードは半角英数で入力して下さい。</span>
+        		 </div>
+        	</div>
+          <div class="mb-3 row">
+            <label class="col-sm-2 col-form-label" for="InputPassword">パスワード確認</label>
+              <div class="col-sm-6">
+        			  <input type="password" class="form-control" id="InputPassword" placeholder="パスワード">
+                <span id="helpBlock" class="form-text">パスワードは半角英数で入力して下さい。</span>
+        		 </div>
+        	</div>
+        	<div class="mb-3 row">
+        		<div class="offset-sm-2 col-sm-10">
+              <button type="submit" class="btn btn-secondary">登録する</button>
+        		</div>
+        	</div>
+      </div>
+    <% end %>
 </div>
